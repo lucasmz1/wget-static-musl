@@ -1,4 +1,4 @@
-name: Build Carburetor AppImage
+name: Build wget musl static
 # Controls when the action will run.
 on:
   # Build at 00:00 every 6th day

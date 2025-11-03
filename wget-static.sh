@@ -43,8 +43,7 @@ cd wget-1.25.0/
 ./configure CC=gcc --with-ssl=openssl LDFLAGS='-static -lidn2 -lunistring' PERL=/usr/bin/perl
 make
 exit"
-mkdir dist
+mkdir -p dist
 cp ./pasta/wget-1.25.0/src/wget dist/
-cd dist/
-strip wget
-tar -cJf wget.tar.xz wget
+strip dist/wget
+tar -C dist -cJf dist/wget.tar.xz wget

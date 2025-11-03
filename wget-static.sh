@@ -7,6 +7,7 @@ sudo apt -y install wget curl strip
 wget -c "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/x86_64/alpine-minirootfs-3.22.2-x86_64.tar.gz"
 
 ##extract rootfs
+mkdir pasta
 tar xf alpine-minirootfs-3.22.2-x86_64.tar.gz -C pasta/
 
 ##copy resolv.conf into the folder

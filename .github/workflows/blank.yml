@@ -44,6 +44,6 @@ jobs:
           generate_release_notes: false
           make_latest: true
           files: |
-            *./dist/.tar.xz*
+            dist/*.tar.xz
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

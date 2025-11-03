@@ -37,8 +37,12 @@ flex \
 bison \
 libunistring-dev \
 libunistring-static \
-perl && curl -C - -L -O 'https://mirror.marwan.ma/gnu/wget/wget-1.25.0.tar.gz' && tar xf wget-1.25.0.tar.gz && cd wget-1.25.0/ \
-./configure CC=gcc --with-ssl=openssl LDFLAGS='-static -lidn2 -lunistring' PERL=/usr/bin/perl && make && exit"
+perl && curl -C - -L -O 'https://mirror.marwan.ma/gnu/wget/wget-1.25.0.tar.gz'
+tar xf wget-1.25.0.tar.gz
+cd wget-1.25.0/
+./configure CC=gcc --with-ssl=openssl LDFLAGS='-static -lidn2 -lunistring' PERL=/usr/bin/perl
+make
+exit"
 mkdir dist
 cp ./pasta/wget-1.25.0/src/wget dist/
 cd dist/

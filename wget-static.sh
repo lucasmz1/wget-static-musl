@@ -28,7 +28,7 @@ libpsl-dev \
 libuuid \
 curl \
 gawk \
-libpsl-dev\
+libpsl-dev \
 libidn2-static \
 openssl-libs-static \
 zlib-static \
